@@ -5,7 +5,6 @@ int	saisienb()
 	int nb = 0;
 	printf("Saisir nb\n");
 	scanf("%d", &nb);
-//	printf("nombre est : %d\n",nb);
 	return nb;
 }
 
