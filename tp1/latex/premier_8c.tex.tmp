@@ -1,0 +1,65 @@
+\hypertarget{premier_8c}{}\section{premier.\+c File Reference}
+\label{premier_8c}\index{premier.\+c@{premier.\+c}}
+
+
+TP 1 du module programmation procédurale en C.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for premier.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{premier_8c_a0c99d968a34e803d378692bde2e3f18f}{main} (int ac, char $\ast$$\ast$av)
+\begin{DoxyCompactList}\small\item\em Programme qui affiche bonjour tout le monde sur la sortie standard. Premier programme en c avec la documentation doxygen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+TP 1 du module programmation procédurale en C. 
+
+Commentaire de fichier oxygen
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+16/11/2019 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{premier_8c_a0c99d968a34e803d378692bde2e3f18f}\label{premier_8c_a0c99d968a34e803d378692bde2e3f18f}} 
+\index{premier.\+c@{premier.\+c}!main@{main}}
+\index{main@{main}!premier.\+c@{premier.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{ac,  }\item[{char $\ast$$\ast$}]{av }\end{DoxyParamCaption})}
+
+
+
+Programme qui affiche bonjour tout le monde sur la sortie standard. Premier programme en c avec la documentation doxygen. 
+
+Commentaire de la fonction main (doxygen)
+
+\begin{DoxyAuthor}{Author}
+Adam Rida $<$\href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+16/11/2019 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em ac} & nombre d\textquotesingle{}arguments en entree \\
+\hline
+{\em av} & arguments en entree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 si tout se passe correctement 
+\end{DoxyReturn}
