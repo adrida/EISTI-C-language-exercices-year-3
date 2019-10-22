@@ -44,6 +44,20 @@ void	tableMultiplication(int n)
 
 void	estAmstrong(int n)
 {
+	int somme_cubes = 0;
+	int i;
+
+	i = n;
+	while (i != 0)
+	{
+		somme_cubes = somme_cubes + ((i % 10) * (i % 10) * (i % 10));
+		i = i /10;
+	}
+	if (somme_cubes == n)
+		printf("C'est un nombre d'Amstrong\n");
+	else
+		printf("Ce n'est pas un nombre d'Amstrong\n");
+	return;	
 }
 
 
