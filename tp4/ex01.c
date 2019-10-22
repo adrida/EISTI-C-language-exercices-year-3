@@ -11,21 +11,23 @@
 
 int	quaddrillage(int n)
 {
-	int x;
-	int y;
+	float x;
+	float y;
 	int i;
 	int count;
-	int r = 4;
+	int r = 10;
 
-	x = 0;
-	y = 0;
+	x = ((float)rand()/(float)(RAND_MAX/r));
+	printf("x = %f\n", x);
+	y = ((float)rand()/(float)(RAND_MAX/r));
+	printf("y = %f\n", y);
 	i = 0;
 	count = 0;
 	while (i != n)
 	{
-		x = rand();
-		y = rand();
-	//	if (sqrt((x * x) + (y * y)) <= r)
+		x = ((float)rand()/(float)(RAND_MAX/r));
+		y = ((float)rand()/(float)(RAND_MAX/r));
+		if (sqrt((x * x) + (y * y)) < r)
 			count++;
 		i++;	
 	}
@@ -34,7 +36,6 @@ int	quaddrillage(int n)
 
 int main(int ac, char **av)
 {
-//	printf("A power B = %d\n", ((atoi(av[1]))pow(atoi(av[2]))));
 	printf("Approximation de pi : %d\n", quaddrillage(atoi(av[1])));
 	return 0; 	
 }
