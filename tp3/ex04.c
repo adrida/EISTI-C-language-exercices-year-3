@@ -32,6 +32,14 @@ void	affichageTriangle(int n)
 
 void	tableMultiplication(int n)
 {
+	int i;
+
+	i = 1;
+	while (i <= 10)
+	{
+		printf("%d x %d = %d\n", i , n , i * n);
+		i++;
+	}
 }
 
 void	estAmstrong(int n)
