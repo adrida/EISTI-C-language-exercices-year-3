@@ -7,9 +7,9 @@ int	saisienb()
 	scanf("%d", &nb);
 	return nb;
 }
-
 int main()
 {
 	printf("Votre nombre est %d\n", saisienb());
 	return 0;
 }
+

@@ -59,7 +59,7 @@ void	eq2nd(void)
 	scanf("%e", &c);
 	d = (b * b) - (4 * a * c);
 	if (d > 0)
-		printf("La racine 1 est : %f\nLa racine 2 est : %f", ((-b - sqrtf(d)) / (2 * a)) , ((-b + sqrtf(d)) / (2 * a)));
+		printf("La racine 1 est : %f\nLa racine 2 est : %f", ((-b - sqrt(d)) / (2 * a)) , ((-b + sqrt(d)) / (2 * a)));
 	if (d == 0)
 		printf("La racine est : %f\n",((-b) / (2 * a)));
 	return;
