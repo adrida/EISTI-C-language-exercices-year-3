@@ -33,8 +33,7 @@ int main()
 	int n = 2;
 	printf("Saisir la taille  de l'ensemble : \n");
 	scanf("%d", &n);
-	if (n <= 0)
-		return 0;
-	get_minmax(n);
+	if (n > 0)
+		get_minmax(n);
 	return 0;
 }
