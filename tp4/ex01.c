@@ -15,7 +15,7 @@ int	quaddrillage(int n)
 	float y;
 	int i;
 	int count;
-	int r = 10;
+	int r = 1;
 
 	x = ((float)rand()/(float)(RAND_MAX/r));
 	printf("x = %f\n", x);
@@ -23,12 +23,19 @@ int	quaddrillage(int n)
 	printf("y = %f\n", y);
 	i = 0;
 	count = 0;
-	while (i != n)
+	while (i <= n)
 	{
 		x = ((float)rand()/(float)(RAND_MAX/r));
 		y = ((float)rand()/(float)(RAND_MAX/r));
-		if (sqrt((x * x) + (y * y)) < r)
+		if (sqrtf((x * x) + (y * y)) < r)
+		{	
 			count++;
+			printf("COUNT = %d\n", count);
+			printf("[--------------\n");
+			printf("x = %f\n", x);
+			printf("y = %f\n", y);
+			printf("--------------]\n");
+		}
 		i++;	
 	}
 	return count;
