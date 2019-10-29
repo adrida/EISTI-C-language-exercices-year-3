@@ -4,6 +4,8 @@
  * \version 0.1
  * \date 2019-10-29
  */
+
+/* Inclusion des entetes de libraire */
 #include <stdio.h>
 
 /*! \fn void	saisienb()
@@ -80,6 +82,12 @@ void	get_minmax(void)
 	printf ("Max de l'ensemble : %d\n Min de l'ensemble : %d\n",max,min);
 }
 
+/*! \fn void disp_info(void)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-10-29
+* \brief Question 5. Saisie des informations d'une personne et affichage de celles ci  
+*/
 void disp_info(void)
 {
 	char nom[30];
@@ -92,6 +100,7 @@ void disp_info(void)
 	scanf("%s", prenom);
 	printf("Entrez votre date de naissance : (format : jj/mm/yyyy) ...");
 	scanf("%s", date);
+	printf("Voici ce que vous avez entre : \n");
 	printf("Nom : %s\n", nom);
 	printf("Prenom : %s\n", prenom);	
 	printf("Date de naissance : %s\n", date);	
@@ -109,7 +118,7 @@ int main()
 	printf("\n------ QUESTION 4 : Minimum et maximum -------\n");
 //	get_minmax();
 	printf("\n------ QUESTION 5 : Saisie personne -------\n");
-	disp_info();
+//	disp_info();
 
 
 
