@@ -1,4 +1,6 @@
+
 #include <stdio.h>
+
 
 void	get_minmax(int n)
 {

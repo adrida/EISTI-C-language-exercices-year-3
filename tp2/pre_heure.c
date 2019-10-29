@@ -1,3 +1,10 @@
+/*! \file pre_heure.c
+* \brief 
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 1
+* \date 2019-10-29
+*/
+
 #include <stdio.h>
 
 void	pred_heure()
@@ -26,6 +33,17 @@ void	pred_heure()
 	printf("Heure dans 1 minute : %dh%d\n", hh,mm);
 }
 
+/*! \fn int main(int ac, char **av)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 1
+* \date 2019-10-29
+*
+* \brief 
+* \param ac
+* \param av
+*
+* \return 
+*/
 int main(int ac, char **av)
 {
 	pred_heure();
