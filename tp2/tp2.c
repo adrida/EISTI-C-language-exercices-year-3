@@ -106,6 +106,29 @@ void disp_info(void)
 	printf("Date de naissance : %s\n", date);	
 }
 
+
+/*! \fn void	div()
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-10-29
+* \brief Question 6. Fonction qui divise deux entiers
+* \remark  La fonction prend en compte des entiers donc ne traite pas les nombres decimaux d'ou le fait qu'il n'y ait pas de resultat avec les deux dernieres entrees proposee dans l'ennonce. Autre observation, etant donne que dans le printf la variable est sous la forme %d, la valeur prise par n/d est transformee en entier donc par exemple 5/2=2.5 devient 2 et si n < N alors n/N < 1 donc la valeur est 0.
+*/
+void	div()
+{
+	int n = 0;	
+	int d = 1;
+
+	printf ("N = ?\n");
+	scanf("%d",&n);
+	printf ("D = ?\n");
+	scanf("%d", &d);
+	if (d != 0)
+		printf("%d / %d = %d\n", n,d, n/d);
+	else
+		printf("division impossible");
+}
+
 int main()
 {
 
@@ -119,6 +142,8 @@ int main()
 //	get_minmax();
 	printf("\n------ QUESTION 5 : Saisie personne -------\n");
 //	disp_info();
+	printf("\n------ QUESTION 6 : Division d'entiers -------\n");
+	div();
 
 
 
