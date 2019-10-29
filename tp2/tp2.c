@@ -129,6 +129,126 @@ void	div()
 		printf("division impossible");
 }
 
+/*! \fn void	pred_heure()
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-10-29
+* \brief Question 7. Prediction de l'heure qu'il sera a la minute suivante. 
+*/
+void	pred_heure()
+{
+	int hh = 0;
+	int mm = 0;
+
+	printf("Heure ?\n");
+	scanf("%d", &hh);
+	printf("Minute ?\n");
+	scanf("%d", &mm);
+
+	if (hh >= 0 && hh <= 23 && mm >= 0 && mm <= 59)
+	{
+		if (mm == 59)
+		{
+			if (hh == 23)
+				hh = 0;
+			else
+				hh++;
+			mm = 0;
+		}
+		else 
+			mm++;
+	}
+	printf("Heure dans 1 minute : %dh%d\n", hh,mm);
+}
+
+
+/*! \fn int	is_bis(int yy)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-10-29
+*
+* \brief Determine si une annee est bisextille ou non
+* \param yy : Annee dont il faut determiner si elle est bisextille ou non
+*
+* \return : 1 si oui 0 sinon
+*/
+int	is_bis(int yy)
+{
+	if ( ((yy %  4) == 0) && (((yy % 100) > 0) || (yy % 400) == 0))
+		return 1;
+	else
+		return 0;
+}
+
+/*! \fn int get_month_len(int mm, int yy)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-10-29
+* 
+* \brief Determine le nombre de jours dans 1 mois
+*
+* \param mm : Mois dont il faut determiner le nombre de jours
+* \param yy : Annee de la date recherchee
+*
+* \return : Retourne le nombre de jours si le mois est valide, 0 sinon
+*/
+int get_month_len(int mm, int yy)
+{
+	if (mm < 1 || mm > 12)
+		return 0;
+	if (mm == 1 || mm == 3 || mm == 5 || mm == 7 || mm == 8 || mm == 10 || mm == 12)
+		return 31;
+	if (mm == 2)
+	{
+		if (is_bis(yy))
+			return 29;
+		else
+			return 28;
+	}
+	return 30;
+}
+
+/*! \fn void	pred_date()
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-10-29
+* \brief Question 8. Predire la date qu'il sera le jour suivant de la date saisie
+* \remark Il faut bien prendre en compte les annees bisextiles
+*/
+void	pred_date()
+{
+
+	int dd = 0;
+	int mm = 0;
+	int yy =  0;
+	printf("Jour?\n");
+	scanf("%d",&dd);
+	printf("Mois?\n");
+	scanf("%d",&mm);
+	printf("Annee?\n");
+	scanf("%d",&yy);
+	if ((get_month_len(mm, yy) == 0) || (dd > get_month_len(mm,yy)) || (dd < 1))
+	{
+		printf ("Date non valide\n");
+		return;
+	}
+	if (get_month_len(mm,yy) == dd)
+	{
+		if (mm == 12)
+		{
+			mm = 1;
+			yy++;
+		}
+		else
+			mm++;
+		dd = 1;
+	}
+	else
+		dd++;
+	printf("Dans 1 jour nous serons le : %d/%d/%d\n", dd,mm,yy);
+}
+
+
 int main()
 {
 
@@ -143,7 +263,12 @@ int main()
 	printf("\n------ QUESTION 5 : Saisie personne -------\n");
 //	disp_info();
 	printf("\n------ QUESTION 6 : Division d'entiers -------\n");
-	div();
+//	div();
+	printf("\n------ QUESTION 7 : Predire l'heure -------\n");
+//	pred_heure();
+	printf("\n------ QUESTION 8 : Predire la date -------\n");
+	pred_date();
+
 
 
 
