@@ -9,10 +9,10 @@
 #include <math.h>
 #include <stdlib.h>
 
-float	newton(int n)
+long double	newton(int n)
 {
-	float unp;
-	int i;
+	long double	unp;
+	int 		i;
 
 	i = 0;
 	unp = 1;
@@ -28,6 +28,6 @@ float	newton(int n)
 
 int	main(int ac, char **av)
 {
-	printf ("Approx sqrt 2  = %f\n", newton(atoi(av[1])));
+	printf ("Approx sqrt 2  = %Lf\n", newton(atoi(av[1])));
 	return 0;
 }
