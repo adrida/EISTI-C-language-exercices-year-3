@@ -1,0 +1,82 @@
+\hypertarget{ex02_8c}{}\section{ex02.\+c File Reference}
+\label{ex02_8c}\index{ex02.\+c@{ex02.\+c}}
+
+
+\+: exercice 2 tp3, portee d\textquotesingle{}une variable  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for ex02.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ex02_8c_a7789c3404a468235ddbeb87d5030fb8b}{bidon} (void)
+\begin{DoxyCompactList}\small\item\em \+: Fonction pour experimenter la portee des variables \end{DoxyCompactList}\item 
+int \hyperlink{ex02_8c_a0c99d968a34e803d378692bde2e3f18f}{main} (int ac, char $\ast$$\ast$av)
+\begin{DoxyCompactList}\small\item\em \+: Fonction principale, lance les fonctions de l\textquotesingle{}ennonce \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: exercice 2 tp3, portee d\textquotesingle{}une variable 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ex02_8c_a7789c3404a468235ddbeb87d5030fb8b}\label{ex02_8c_a7789c3404a468235ddbeb87d5030fb8b}} 
+\index{ex02.\+c@{ex02.\+c}!bidon@{bidon}}
+\index{bidon@{bidon}!ex02.\+c@{ex02.\+c}}
+\subsubsection{\texorpdfstring{bidon()}{bidon()}}
+{\footnotesize\ttfamily void bidon (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Fonction pour experimenter la portee des variables 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+\mbox{\Hypertarget{ex02_8c_a0c99d968a34e803d378692bde2e3f18f}\label{ex02_8c_a0c99d968a34e803d378692bde2e3f18f}} 
+\index{ex02.\+c@{ex02.\+c}!main@{main}}
+\index{main@{main}!ex02.\+c@{ex02.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{ac,  }\item[{char $\ast$$\ast$}]{av }\end{DoxyParamCaption})}
+
+
+
+\+: Fonction principale, lance les fonctions de l\textquotesingle{}ennonce 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em ac} & \+: Nb d\textquotesingle{}arguments \\
+\hline
+{\em av} & \+: Arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: Retourne 0 si tout se passe bien 
+\end{DoxyReturn}

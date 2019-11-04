@@ -1,0 +1,27 @@
+************************************
+Auteur : Adam Rida <ridaadam@eisti.eu>
+
+Il s'agit du TP2. 
+
+Tous les exercices s'executent les uns apres les autres. Si vous voulez tester precisement certaines fonctions vous pouvez les mettre en commentaire dans le main. 
+
+Note : Etant donne que nous n'avons pas vu en cours les header et qu'il y a peu d'exercices tout est dans un seul fichier. Il n'y a donc pas de .h
+-------------------------------------------------------------
+** Compilation : 
+
+Tapez dans le terminal : make
+
+** Execution
+
+Tapez dans le terminal : make run
+
+** Generer documentation Doxygen :
+
+Tapez dans le terminal : make doc
+
+** Supprimer l'executable :
+
+Tapez dans le terminal : make clean
+
+
+

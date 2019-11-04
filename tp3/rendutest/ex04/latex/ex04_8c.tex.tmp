@@ -1,0 +1,160 @@
+\hypertarget{ex04_8c}{}\section{ex04.\+c File Reference}
+\label{ex04_8c}\index{ex04.\+c@{ex04.\+c}}
+
+
+\+: Exercice 4 tp3, exercices de bases en C plusieurs fonctions  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for ex04.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ex04_8c_a2363b07f27acb7b910b56142087ef15b}{affichage\+Triangle} (int n)
+\begin{DoxyCompactList}\small\item\em \+: Affiche une pyramide en fonction de la taille prise en param \end{DoxyCompactList}\item 
+void \hyperlink{ex04_8c_a407d900c58077b224c2764d4f62fad8e}{table\+Multiplication} (int n)
+\begin{DoxyCompactList}\small\item\em \+: Affiche une table de multiplication \end{DoxyCompactList}\item 
+void \hyperlink{ex04_8c_adeac44f5233628217815596bf010e512}{est\+Amstrong} (int n)
+\begin{DoxyCompactList}\small\item\em \+: Determine si un nombre est un nombre d\textquotesingle{}amstrong ou non \end{DoxyCompactList}\item 
+void \hyperlink{ex04_8c_ad16e5e62f3579a7048e6b981b172885e}{menu} (void)
+\begin{DoxyCompactList}\small\item\em \+: Menu pour lancer une des fonctions \end{DoxyCompactList}\item 
+int \hyperlink{ex04_8c_a0c99d968a34e803d378692bde2e3f18f}{main} (int ac, char $\ast$$\ast$av)
+\begin{DoxyCompactList}\small\item\em \+: Fonction principale, lance le menu \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: Exercice 4 tp3, exercices de bases en C plusieurs fonctions 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ex04_8c_a2363b07f27acb7b910b56142087ef15b}\label{ex04_8c_a2363b07f27acb7b910b56142087ef15b}} 
+\index{ex04.\+c@{ex04.\+c}!affichage\+Triangle@{affichage\+Triangle}}
+\index{affichage\+Triangle@{affichage\+Triangle}!ex04.\+c@{ex04.\+c}}
+\subsubsection{\texorpdfstring{affichage\+Triangle()}{affichageTriangle()}}
+{\footnotesize\ttfamily void affichage\+Triangle (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+\+: Affiche une pyramide en fonction de la taille prise en param 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \+: Dimesions de la pyramide \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ex04_8c_adeac44f5233628217815596bf010e512}\label{ex04_8c_adeac44f5233628217815596bf010e512}} 
+\index{ex04.\+c@{ex04.\+c}!est\+Amstrong@{est\+Amstrong}}
+\index{est\+Amstrong@{est\+Amstrong}!ex04.\+c@{ex04.\+c}}
+\subsubsection{\texorpdfstring{est\+Amstrong()}{estAmstrong()}}
+{\footnotesize\ttfamily void est\+Amstrong (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+\+: Determine si un nombre est un nombre d\textquotesingle{}amstrong ou non 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \+: Nombre qu\textquotesingle{}il faut verifier \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ex04_8c_a0c99d968a34e803d378692bde2e3f18f}\label{ex04_8c_a0c99d968a34e803d378692bde2e3f18f}} 
+\index{ex04.\+c@{ex04.\+c}!main@{main}}
+\index{main@{main}!ex04.\+c@{ex04.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{ac,  }\item[{char $\ast$$\ast$}]{av }\end{DoxyParamCaption})}
+
+
+
+\+: Fonction principale, lance le menu 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em ac} & \+: nb d\textquotesingle{}args \\
+\hline
+{\em av} & \+: args\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: retourne 0 si tout se passe bien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ex04_8c_ad16e5e62f3579a7048e6b981b172885e}\label{ex04_8c_ad16e5e62f3579a7048e6b981b172885e}} 
+\index{ex04.\+c@{ex04.\+c}!menu@{menu}}
+\index{menu@{menu}!ex04.\+c@{ex04.\+c}}
+\subsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Menu pour lancer une des fonctions 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+\mbox{\Hypertarget{ex04_8c_a407d900c58077b224c2764d4f62fad8e}\label{ex04_8c_a407d900c58077b224c2764d4f62fad8e}} 
+\index{ex04.\+c@{ex04.\+c}!table\+Multiplication@{table\+Multiplication}}
+\index{table\+Multiplication@{table\+Multiplication}!ex04.\+c@{ex04.\+c}}
+\subsubsection{\texorpdfstring{table\+Multiplication()}{tableMultiplication()}}
+{\footnotesize\ttfamily void table\+Multiplication (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+\+: Affiche une table de multiplication 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \+: Table a afficher \\
+\hline
+\end{DoxyParams}

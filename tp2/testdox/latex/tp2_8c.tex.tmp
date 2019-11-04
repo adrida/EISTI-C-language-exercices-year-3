@@ -1,0 +1,355 @@
+\hypertarget{tp2_8c}{}\section{tp2.\+c File Reference}
+\label{tp2_8c}\index{tp2.\+c@{tp2.\+c}}
+
+
+\+: T\+P2 Entree et sorties  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for tp2.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{tp2_8c_ac1b311d2f15b7c499ba698c8f4e65427}{saisienb} (void)
+\begin{DoxyCompactList}\small\item\em \+: Question 1. Fonction qui demande de saisir un nombre et l\textquotesingle{}affiche \end{DoxyCompactList}\item 
+void \hyperlink{tp2_8c_a8d8468eee5cd3386c4196b0764512467}{saisie2nb} (void)
+\begin{DoxyCompactList}\small\item\em \+: Question 3. (La q2 n\textquotesingle{}est pas une fonction) Fonction qui demande de saisir 2 entiers et les affiches \end{DoxyCompactList}\item 
+void \hyperlink{tp2_8c_a41a89e43280795d7167cb05360c91ce8}{get\+\_\+minmax} (void)
+\begin{DoxyCompactList}\small\item\em \+: Question 4. Trouve le min et le max a la suite d\textquotesingle{}une saisie succesive d\textquotesingle{}entiers \end{DoxyCompactList}\item 
+void \hyperlink{tp2_8c_a8530da3533f0e15f7a22a1362721ce58}{disp\+\_\+info} (void)
+\begin{DoxyCompactList}\small\item\em \+: Question 5. Saisie des informations d\textquotesingle{}une personne et affichage de celles ci \end{DoxyCompactList}\item 
+void \hyperlink{tp2_8c_abea30865f3773ba41c3532bdc7591898}{div} ()
+\begin{DoxyCompactList}\small\item\em \+: Question 6. Fonction qui divise deux entiers \end{DoxyCompactList}\item 
+void \hyperlink{tp2_8c_ac3c9820c08e1c733fb79b6d4e970c5ac}{pred\+\_\+heure} ()
+\begin{DoxyCompactList}\small\item\em \+: Question 7. Prediction de l\textquotesingle{}heure qu\textquotesingle{}il sera a la minute suivante. \end{DoxyCompactList}\item 
+int \hyperlink{tp2_8c_a2c1c9ba5d1970bd1f48d0e6fcb38ca96}{is\+\_\+bis} (int yy)
+\begin{DoxyCompactList}\small\item\em \+: Determine si une annee est bisextille ou non \end{DoxyCompactList}\item 
+int \hyperlink{tp2_8c_ac1708f312706453fc78c30e8314f8be8}{get\+\_\+month\+\_\+len} (int mm, int yy)
+\begin{DoxyCompactList}\small\item\em \+: Determine le nombre de jours dans 1 mois \end{DoxyCompactList}\item 
+void \hyperlink{tp2_8c_adaf623717b771e3b52876e6fe15f5cd9}{pred\+\_\+date} ()
+\begin{DoxyCompactList}\small\item\em \+: Question 8. Predire la date qu\textquotesingle{}il sera le jour suivant de la date saisie \end{DoxyCompactList}\item 
+void \hyperlink{tp2_8c_ac254b00f218a0f2b5892e14bacf36d4e}{fact} (void)
+\begin{DoxyCompactList}\small\item\em \+: Fonction qui calcule puis affiche la factorielle d\textquotesingle{}un entier saisi \end{DoxyCompactList}\item 
+void \hyperlink{tp2_8c_a7d38efea560c82536be0894b78071ec5}{pgcd} (void)
+\begin{DoxyCompactList}\small\item\em \+: Fonction qui calcule et affiche le pgcd de deux entiers saisis \end{DoxyCompactList}\item 
+void \hyperlink{tp2_8c_a0cca351d72444930357ca055c8aba99a}{eq2nd} (void)
+\begin{DoxyCompactList}\small\item\em \+: Fonction qui trouve et affiche les racines d\textquotesingle{}une equation du second degre \end{DoxyCompactList}\item 
+void \hyperlink{tp2_8c_ad16e5e62f3579a7048e6b981b172885e}{menu} (void)
+\begin{DoxyCompactList}\small\item\em \+: Question 9. Menu qui permet de realiser les differentes operations mathematiques proposees \end{DoxyCompactList}\item 
+int \hyperlink{tp2_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em \+: Main du T\+P2 tous les exercices s\textquotesingle{}executent les uns apres les autres \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: T\+P2 Entree et sorties 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tp2_8c_a8530da3533f0e15f7a22a1362721ce58}\label{tp2_8c_a8530da3533f0e15f7a22a1362721ce58}} 
+\index{tp2.\+c@{tp2.\+c}!disp\+\_\+info@{disp\+\_\+info}}
+\index{disp\+\_\+info@{disp\+\_\+info}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{disp\+\_\+info()}{disp\_info()}}
+{\footnotesize\ttfamily void disp\+\_\+info (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Question 5. Saisie des informations d\textquotesingle{}une personne et affichage de celles ci 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}
+\mbox{\Hypertarget{tp2_8c_abea30865f3773ba41c3532bdc7591898}\label{tp2_8c_abea30865f3773ba41c3532bdc7591898}} 
+\index{tp2.\+c@{tp2.\+c}!div@{div}}
+\index{div@{div}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{div()}{div()}}
+{\footnotesize\ttfamily void div (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\+: Question 6. Fonction qui divise deux entiers 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+La fonction prend en compte des entiers donc ne traite pas les nombres decimaux d\textquotesingle{}ou le fait qu\textquotesingle{}il n\textquotesingle{}y ait pas de resultat avec les deux dernieres entrees proposee dans l\textquotesingle{}ennonce. Autre observation, etant donne que dans le printf la variable est sous la forme d, la valeur prise par n/d est transformee en entier donc par exemple 5/2=2.\+5 devient 2 et si n $<$ N alors n/N $<$ 1 donc la valeur est 0. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{tp2_8c_a0cca351d72444930357ca055c8aba99a}\label{tp2_8c_a0cca351d72444930357ca055c8aba99a}} 
+\index{tp2.\+c@{tp2.\+c}!eq2nd@{eq2nd}}
+\index{eq2nd@{eq2nd}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{eq2nd()}{eq2nd()}}
+{\footnotesize\ttfamily void eq2nd (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Fonction qui trouve et affiche les racines d\textquotesingle{}une equation du second degre 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}
+\mbox{\Hypertarget{tp2_8c_ac254b00f218a0f2b5892e14bacf36d4e}\label{tp2_8c_ac254b00f218a0f2b5892e14bacf36d4e}} 
+\index{tp2.\+c@{tp2.\+c}!fact@{fact}}
+\index{fact@{fact}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{fact()}{fact()}}
+{\footnotesize\ttfamily void fact (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Fonction qui calcule puis affiche la factorielle d\textquotesingle{}un entier saisi 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}
+\mbox{\Hypertarget{tp2_8c_a41a89e43280795d7167cb05360c91ce8}\label{tp2_8c_a41a89e43280795d7167cb05360c91ce8}} 
+\index{tp2.\+c@{tp2.\+c}!get\+\_\+minmax@{get\+\_\+minmax}}
+\index{get\+\_\+minmax@{get\+\_\+minmax}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+minmax()}{get\_minmax()}}
+{\footnotesize\ttfamily void get\+\_\+minmax (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Question 4. Trouve le min et le max a la suite d\textquotesingle{}une saisie succesive d\textquotesingle{}entiers 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}
+\mbox{\Hypertarget{tp2_8c_ac1708f312706453fc78c30e8314f8be8}\label{tp2_8c_ac1708f312706453fc78c30e8314f8be8}} 
+\index{tp2.\+c@{tp2.\+c}!get\+\_\+month\+\_\+len@{get\+\_\+month\+\_\+len}}
+\index{get\+\_\+month\+\_\+len@{get\+\_\+month\+\_\+len}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+month\+\_\+len()}{get\_month\_len()}}
+{\footnotesize\ttfamily int get\+\_\+month\+\_\+len (\begin{DoxyParamCaption}\item[{int}]{mm,  }\item[{int}]{yy }\end{DoxyParamCaption})}
+
+
+
+\+: Determine le nombre de jours dans 1 mois 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mm} & \+: Mois dont il faut determiner le nombre de jours \\
+\hline
+{\em yy} & \+: Annee de la date recherchee\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: Retourne le nombre de jours si le mois est valide, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tp2_8c_a2c1c9ba5d1970bd1f48d0e6fcb38ca96}\label{tp2_8c_a2c1c9ba5d1970bd1f48d0e6fcb38ca96}} 
+\index{tp2.\+c@{tp2.\+c}!is\+\_\+bis@{is\+\_\+bis}}
+\index{is\+\_\+bis@{is\+\_\+bis}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{is\+\_\+bis()}{is\_bis()}}
+{\footnotesize\ttfamily int is\+\_\+bis (\begin{DoxyParamCaption}\item[{int}]{yy }\end{DoxyParamCaption})}
+
+
+
+\+: Determine si une annee est bisextille ou non 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em yy} & \+: Annee dont il faut determiner si elle est bisextille ou non\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: 1 si oui 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tp2_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{tp2_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{tp2.\+c@{tp2.\+c}!main@{main}}
+\index{main@{main}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\+: Main du T\+P2 tous les exercices s\textquotesingle{}executent les uns apres les autres 
+
+int main(int ac, char $\ast$$\ast$av) \begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+\+: 0 si tout se passe bien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tp2_8c_ad16e5e62f3579a7048e6b981b172885e}\label{tp2_8c_ad16e5e62f3579a7048e6b981b172885e}} 
+\index{tp2.\+c@{tp2.\+c}!menu@{menu}}
+\index{menu@{menu}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Question 9. Menu qui permet de realiser les differentes operations mathematiques proposees 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+Il s\textquotesingle{}agit d\textquotesingle{}un menu recursif, il aurait aussi ete possible de le faire grace a une boucle while. A\+T\+T\+E\+N\+T\+I\+ON, ne pas oublier -\/lm lors de la compilation pour la fonction sqrt 
+\end{DoxyRemark}
+\mbox{\Hypertarget{tp2_8c_a7d38efea560c82536be0894b78071ec5}\label{tp2_8c_a7d38efea560c82536be0894b78071ec5}} 
+\index{tp2.\+c@{tp2.\+c}!pgcd@{pgcd}}
+\index{pgcd@{pgcd}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{pgcd()}{pgcd()}}
+{\footnotesize\ttfamily void pgcd (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Fonction qui calcule et affiche le pgcd de deux entiers saisis 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}
+\mbox{\Hypertarget{tp2_8c_adaf623717b771e3b52876e6fe15f5cd9}\label{tp2_8c_adaf623717b771e3b52876e6fe15f5cd9}} 
+\index{tp2.\+c@{tp2.\+c}!pred\+\_\+date@{pred\+\_\+date}}
+\index{pred\+\_\+date@{pred\+\_\+date}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{pred\+\_\+date()}{pred\_date()}}
+{\footnotesize\ttfamily void pred\+\_\+date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\+: Question 8. Predire la date qu\textquotesingle{}il sera le jour suivant de la date saisie 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+Il faut bien prendre en compte les annees bisextiles 
+\end{DoxyRemark}
+\mbox{\Hypertarget{tp2_8c_ac3c9820c08e1c733fb79b6d4e970c5ac}\label{tp2_8c_ac3c9820c08e1c733fb79b6d4e970c5ac}} 
+\index{tp2.\+c@{tp2.\+c}!pred\+\_\+heure@{pred\+\_\+heure}}
+\index{pred\+\_\+heure@{pred\+\_\+heure}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{pred\+\_\+heure()}{pred\_heure()}}
+{\footnotesize\ttfamily void pred\+\_\+heure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\+: Question 7. Prediction de l\textquotesingle{}heure qu\textquotesingle{}il sera a la minute suivante. 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}
+\mbox{\Hypertarget{tp2_8c_a8d8468eee5cd3386c4196b0764512467}\label{tp2_8c_a8d8468eee5cd3386c4196b0764512467}} 
+\index{tp2.\+c@{tp2.\+c}!saisie2nb@{saisie2nb}}
+\index{saisie2nb@{saisie2nb}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{saisie2nb()}{saisie2nb()}}
+{\footnotesize\ttfamily void saisie2nb (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Question 3. (La q2 n\textquotesingle{}est pas une fonction) Fonction qui demande de saisir 2 entiers et les affiches 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}
+\mbox{\Hypertarget{tp2_8c_ac1b311d2f15b7c499ba698c8f4e65427}\label{tp2_8c_ac1b311d2f15b7c499ba698c8f4e65427}} 
+\index{tp2.\+c@{tp2.\+c}!saisienb@{saisienb}}
+\index{saisienb@{saisienb}!tp2.\+c@{tp2.\+c}}
+\subsubsection{\texorpdfstring{saisienb()}{saisienb()}}
+{\footnotesize\ttfamily void saisienb (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Question 1. Fonction qui demande de saisir un nombre et l\textquotesingle{}affiche 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/29 
+\end{DoxyDate}

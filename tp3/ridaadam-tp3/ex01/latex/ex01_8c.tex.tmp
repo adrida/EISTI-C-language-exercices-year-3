@@ -1,0 +1,107 @@
+\hypertarget{ex01_8c}{}\section{ex01.\+c File Reference}
+\label{ex01_8c}\index{ex01.\+c@{ex01.\+c}}
+
+
+\+: Exercice 1 du tp3, saisie d\textquotesingle{}entiers  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for ex01.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ex01_8c_a357a8e2dfd40c3f9503ec9768377d89f}{saisie\+Entier} (void)
+\begin{DoxyCompactList}\small\item\em \+: Saisie et retour d\textquotesingle{}un entier \end{DoxyCompactList}\item 
+void \hyperlink{ex01_8c_a95bdb8cd2edecca19a4de8c6a75e4361}{Saisie} (void)
+\begin{DoxyCompactList}\small\item\em \+: Saisie d\textquotesingle{}un entier et l\textquotesingle{}affiche \end{DoxyCompactList}\item 
+int \hyperlink{ex01_8c_a0c99d968a34e803d378692bde2e3f18f}{main} (int ac, char $\ast$$\ast$av)
+\begin{DoxyCompactList}\small\item\em \+: Fonction principale du fichier, lancement de la fonction \hyperlink{ex01_8c_a95bdb8cd2edecca19a4de8c6a75e4361}{Saisie()}; \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: Exercice 1 du tp3, saisie d\textquotesingle{}entiers 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ex01_8c_a0c99d968a34e803d378692bde2e3f18f}\label{ex01_8c_a0c99d968a34e803d378692bde2e3f18f}} 
+\index{ex01.\+c@{ex01.\+c}!main@{main}}
+\index{main@{main}!ex01.\+c@{ex01.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{ac,  }\item[{char $\ast$$\ast$}]{av }\end{DoxyParamCaption})}
+
+
+
+\+: Fonction principale du fichier, lancement de la fonction \hyperlink{ex01_8c_a95bdb8cd2edecca19a4de8c6a75e4361}{Saisie()}; 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em ac} & \+: nombre d\textquotesingle{}arguments \\
+\hline
+{\em av} & \+: arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: retourne 0 si tout se passe bien 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ex01_8c_a95bdb8cd2edecca19a4de8c6a75e4361}\label{ex01_8c_a95bdb8cd2edecca19a4de8c6a75e4361}} 
+\index{ex01.\+c@{ex01.\+c}!Saisie@{Saisie}}
+\index{Saisie@{Saisie}!ex01.\+c@{ex01.\+c}}
+\subsubsection{\texorpdfstring{Saisie()}{Saisie()}}
+{\footnotesize\ttfamily void Saisie (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Saisie d\textquotesingle{}un entier et l\textquotesingle{}affiche 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+\mbox{\Hypertarget{ex01_8c_a357a8e2dfd40c3f9503ec9768377d89f}\label{ex01_8c_a357a8e2dfd40c3f9503ec9768377d89f}} 
+\index{ex01.\+c@{ex01.\+c}!saisie\+Entier@{saisie\+Entier}}
+\index{saisie\+Entier@{saisie\+Entier}!ex01.\+c@{ex01.\+c}}
+\subsubsection{\texorpdfstring{saisie\+Entier()}{saisieEntier()}}
+{\footnotesize\ttfamily int saisie\+Entier (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\+: Saisie et retour d\textquotesingle{}un entier 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+\+: Retourne l\textquotesingle{}entier saisi 
+\end{DoxyReturn}

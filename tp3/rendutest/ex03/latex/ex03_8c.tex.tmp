@@ -1,0 +1,89 @@
+\hypertarget{ex03_8c}{}\section{ex03.\+c File Reference}
+\label{ex03_8c}\index{ex03.\+c@{ex03.\+c}}
+
+
+\+: Ex3 tp3, Probleme d\textquotesingle{}appel de fonction  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for ex03.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ex03_8c_a55ddf50b5e74e1c13dcd458a87a7c226}{echange} (int nb1, int nb2)
+\begin{DoxyCompactList}\small\item\em \+: Fonction qui echange la valeur de deux nombres \end{DoxyCompactList}\item 
+int \hyperlink{ex03_8c_a0c99d968a34e803d378692bde2e3f18f}{main} (int ac, char $\ast$$\ast$av)
+\begin{DoxyCompactList}\small\item\em \+: Fonction principal, demonstration des problemes d\textquotesingle{}appel de fonction \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: Ex3 tp3, Probleme d\textquotesingle{}appel de fonction 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ex03_8c_a55ddf50b5e74e1c13dcd458a87a7c226}\label{ex03_8c_a55ddf50b5e74e1c13dcd458a87a7c226}} 
+\index{ex03.\+c@{ex03.\+c}!echange@{echange}}
+\index{echange@{echange}!ex03.\+c@{ex03.\+c}}
+\subsubsection{\texorpdfstring{echange()}{echange()}}
+{\footnotesize\ttfamily void echange (\begin{DoxyParamCaption}\item[{int}]{nb1,  }\item[{int}]{nb2 }\end{DoxyParamCaption})}
+
+
+
+\+: Fonction qui echange la valeur de deux nombres 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em nb1} & \+: nombre 1 \\
+\hline
+{\em nb2} & \+: nombre 2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ex03_8c_a0c99d968a34e803d378692bde2e3f18f}\label{ex03_8c_a0c99d968a34e803d378692bde2e3f18f}} 
+\index{ex03.\+c@{ex03.\+c}!main@{main}}
+\index{main@{main}!ex03.\+c@{ex03.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{ac,  }\item[{char $\ast$$\ast$}]{av }\end{DoxyParamCaption})}
+
+
+
+\+: Fonction principal, demonstration des problemes d\textquotesingle{}appel de fonction 
+
+\begin{DoxyAuthor}{Author}
+Adam Rida \href{mailto:ridaadam@eisti.eu}{\tt ridaadam@eisti.\+eu} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/11-\/04
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em ac} & \+: nb d\textquotesingle{}args \\
+\hline
+{\em av} & \+: args\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: retourne 0 si tout se passe bien 
+\end{DoxyReturn}

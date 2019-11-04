@@ -1,0 +1,24 @@
+************************************
+Auteur : Adam Rida <ridaadam@eisti.eu>
+
+Il s'agit du TP3. 
+
+Tous les exercices sont independants. 
+
+La documentation Doxygen est dans chaque sous dossier : lancer html/index.html avec un navigateur dans le dossier en question.
+
+Note : Etant donne que nous n'avons pas vu en cours les header et qu'il y a peu d'exercices tout est dans un seul fichier. Il n'y a donc pas de .h
+-------------------------------------------------------------
+** Compilation
+Exerice 1: 
+Tapez dans le terminal : make exec1
+Exerice 2: 
+Tapez dans le terminal : make exec2
+Exerice 3: 
+Tapez dans le terminal : make exec3
+Exerice 4: 
+Tapez dans le terminal : make exec4
+
+**Execution
+Tapez dans le terminal : make run
+
