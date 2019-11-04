@@ -1,5 +1,21 @@
+/*!
+* \file ex04.c
+* \brief : Exercice 4 tp3, exercices de bases en C plusieurs fonctions 
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 
+* \date 2019-11-04
+*/
 #include <stdio.h>
 
+/*!
+* \fn void	affichageTriangle(int n)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 
+* \date 2019-11-04
+* \brief : Affiche une pyramide en fonction de la taille prise en param 
+*
+* \param n : Dimesions de la pyramide
+*/
 void	affichageTriangle(int n)
 {
 	int i;
@@ -30,6 +46,15 @@ void	affichageTriangle(int n)
 	}		
 }
 
+/*!
+* \fn void	tableMultiplication(int n)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 
+* \date 2019-11-04
+* \brief : Affiche une table de multiplication 
+*
+* \param n : Table a afficher
+*/
 void	tableMultiplication(int n)
 {
 	int i;
@@ -42,6 +67,15 @@ void	tableMultiplication(int n)
 	}
 }
 
+/*!
+* \fn void	estAmstrong(int n)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 
+* \date 2019-11-04
+* \brief : Determine si un nombre est un nombre d'amstrong ou non 
+*
+* \param n : Nombre qu'il faut verifier
+*/
 void	estAmstrong(int n)
 {
 	int somme_cubes = 0;
@@ -62,6 +96,13 @@ void	estAmstrong(int n)
 
 
 
+/*!
+* \fn void	menu(void)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 
+* \date 2019-11-04
+* \brief : Menu pour lancer une des fonctions
+*/
 void	menu(void)
 {
 	int i;
@@ -98,6 +139,18 @@ void	menu(void)
 
 
 
+/*!
+* \fn int	main(int ac, char **av)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 
+* \date 2019-11-04
+*
+* \brief : Fonction principale, lance le menu 
+* \param ac : nb d'args
+* \param av : args
+*
+* \return : retourne 0 si tout se passe bien
+*/
 int	main(int ac, char **av)
 {
 	menu();
