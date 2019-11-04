@@ -1,6 +1,6 @@
 /*!
 * \file ex01.c
-* \brief 
+* \brief : Exercice 1 du tp3, saisie d'entiers 
 * \author Adam Rida <ridaadam@eisti.eu>
 * \version 0.1
 * \date 2019-11-04
