@@ -9,40 +9,45 @@
 #include <stdlib.h>
 #include <math.h>
 
-int	quaddrillage(int n)
+float	quaddrillage(int n)
 {
 	float x;
 	float y;
-	int i;
-	int count;
-	int r = 1;
+	float i;
+	float count;
+	int r = 10;
 
 	x = ((float)rand()/(float)(RAND_MAX/r));
-	printf("x = %f\n", x);
+//	printf("x = %f\n", x);
 	y = ((float)rand()/(float)(RAND_MAX/r));
-	printf("y = %f\n", y);
+//	printf("y = %f\n", y);
 	i = 0;
 	count = 0;
 	while (i <= n)
 	{
 		x = ((float)rand()/(float)(RAND_MAX/r));
 		y = ((float)rand()/(float)(RAND_MAX/r));
-		if (sqrtf((x * x) + (y * y)) < r)
+//		printf(" RACINE = %f\n", (sqrt((x * x) + (y * y))));
+		if (sqrt((x * x) + (y * y)) <= r)
 		{	
 			count++;
-			printf("COUNT = %d\n", count);
-			printf("[--------------\n");
-			printf("x = %f\n", x);
-			printf("y = %f\n", y);
-			printf("--------------]\n");
+//			printf("COUNT = %d\n", count);
+//			printf("[--------------\n");
+//			printf("x = %f\n", x);
+//			printf("y = %f\n", y);
+//			printf("--------------]\n");
 		}
+		else
+			printf("\n>>>>>>  ! Skiped ! cpt = %f-------\n i = %f\n", count,i );
 		i++;	
 	}
-	return count;
+	printf("Iteration = %f\n", i);
+	printf("COUNT = %f\n", count);
+	return (4 * (count / i));
 }
 
 int main(int ac, char **av)
 {
-	printf("Approximation de pi : %d\n", quaddrillage(atoi(av[1])));
+	printf("Approximation de pi : %f\n", quaddrillage(atoi(av[1])));
 	return 0; 	
 }
