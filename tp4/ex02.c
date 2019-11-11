@@ -2,12 +2,23 @@
  *  \author ridaadam
  *  \version 0.1
  *  \date 23-10-2019 
- *  \brief
+ *  \brief : Exercice 2 tp4 approx pi methode madhava
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 
+/*!
+* \fn : float	pi_madhava(int n)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-11-11
+* \brief : Calcul de pi selon la methode de Madhava 
+*
+* \param n : Nombre d'iterations ie precision
+*
+* \return : Retourne l'approximation de pi
+*/
 float	pi_madhava(int n)
 {
 	int i;
@@ -18,22 +29,11 @@ float	pi_madhava(int n)
 
 	while (i <= n)
 	{
-		//	printf("iteration #%d\n", i);
 		if ((i % 2) == 0)
 			pi += ( 1 / ((2 * (float)i) + 1));
 		else
 			pi += ( (-1) / ((2 * (float)i) + 1));
 		i++;	
-		printf("pi value : %f\n", pi);
-//		printf("Val affectee = %f \n", ( 1 / ((2 * (float)i) + 1)));
 	}	
 	return (4 * pi);
-}
-
-
-
-int	main(int ac, char **av)
-{
-	printf("Approx pi = %f\n", pi_madhava(atoi(av[1])));
-	return 0;
 }

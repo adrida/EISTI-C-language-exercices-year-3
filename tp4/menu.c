@@ -13,11 +13,9 @@ void	menu(void)
 	int i;
 	int n;
 
-	i = 1;
 	n = 0;
-	if (i == 0)
-		return;
-	printf("Menu TP4\n\n");
+	i = 0;
+	printf("^^^^^^^^^^^^^^^^\n\nMenu TP4\n\n");
 	printf("Selectionnez un exercice : \n");
 	printf("      1       Pi par quadrillage\n");	
 	printf("      2       Pi par Madhava\n");	
@@ -28,41 +26,43 @@ void	menu(void)
 	printf("      0       Quitter le programme\n");
 	printf("Votre selection? :\n");
 	scanf("%d", &i);
+	if (i == 0)
+		return;
 	if (i == 1)
 	{
 		printf("Precision voulue (itterations) : \n");
 		scanf("%d",&n);
-		quadrillage(n);
+		printf("pi = %f\n",quaddrillage(n));
 	}
 	if (i == 2)
 	{
 		printf("Precision voulue (itterations) : \n");
 		scanf("%d",&n);
-		pi_madhava(n);
+		printf("pi = %f\n",pi_madhava(n));
 	}
 	if (i == 3)
 	{
 		printf("Precision voulue (itterations) : \n");
 		scanf("%d",&n);
-		pi_john(n);
+		printf("pi = %f\n",pi_john(n));
 	}
 	if (i == 4)
 	{
 		printf("Precision voulue (itterations) : \n");
 		scanf("%d",&n);
-		newton(n);
+		printf("sqrt(2) = %Lf\n",newton(n));
 	}
 	if (i == 5)
 	{
 		printf("Precision voulue (itterations) : \n");
 		scanf("%d",&n);
-		halley(n);
+		printf("sqrt(2) = %f\n",halley(n));
 	}
 	if (i == 6)
 	{
 		printf("Precision voulue (itterations) : \n");
 		scanf("%d",&n);
-		theon(n);
+		printf("sqrt(2) = %f\n",theon(n));
 	}
 	menu();
 }

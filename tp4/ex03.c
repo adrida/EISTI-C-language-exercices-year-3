@@ -2,12 +2,22 @@
  *  \author ridaadam
  *  \version 0.1
  *  \date 23-10-2019 
- *  \brief
+ *  \brief : ex03 tp4 approx sqrt2
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 
+/*!
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-11-11
+* \brief : Approx racine de 2 methode de john
+*
+* \param n : Nombre d'iterations ie precision
+*
+* \return : Retourne une approx de racine de 2
+*/
 float	pi_john(int n)
 {
 	float i;
@@ -22,10 +32,4 @@ float	pi_john(int n)
 		i++;
 	}
 	return (pi * 2);
-}
-
-int	main(int ac, char **av)
-{
-	printf("Approx pi : %f\n", pi_john(atoi(av[1])));
-	return 0;
 }

@@ -30,10 +30,10 @@ float	theon(int n)
 	return (pn / qn);
 }
 
-
+/*
 int	main(int ac, char **av)
 {
 	// ATTENTION UTILISE UNE ITERATION < 100 SINON CHANGER FLOAT EN DOUBLE LONG
 	printf("Approx sqrt 2 = %f\n", theon(atoi(av[1])));
 	return 0;
-}
+}*/

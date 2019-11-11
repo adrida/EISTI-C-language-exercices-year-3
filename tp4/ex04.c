@@ -25,9 +25,10 @@ long double	newton(int n)
 }
 
 
-
+/*
 int	main(int ac, char **av)
 {
 	printf ("Approx sqrt 2  = %Lf\n", newton(atoi(av[1])));
 	return 0;
 }
+*/
