@@ -9,6 +9,17 @@
 #include <stdlib.h>
 #include <math.h>
 
+/*!
+* \fn : float	quaddrillage(int n)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-11-11
+*
+* \brief : Fonction qui calcule une approximation de pi en utilisant la methode du quadrillage
+* \param n : nombre d'itteration -> Correspond en fait a la precision voulue pour pi
+*
+* \return : Retourne l'approximation de pi obtenue
+*/
 float	quaddrillage(int n)
 {
 	float x;
