@@ -50,7 +50,7 @@ float	quaddrillage(int n)
 		}
 		else
 			printf("\n>>>>>>  ! Skiped ! cpt = %f-------\n i = %f\n", count,i );
-		i++;	
+		i-=-1;	
 	}
 	printf("Iteration = %f\n", i);
 	printf("COUNT = %f\n", count);
