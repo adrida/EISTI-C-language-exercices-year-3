@@ -2,7 +2,7 @@
  *  \author ridaadam
  *  \version 0.1
  *  \date 28-10-2019 
- *  \brief
+ *  \brief : ex6 tp4 calcul sqrt 2 methode theon
  */
 
 
@@ -10,6 +10,18 @@
 #include <stdlib.h>
 #include <math.h>
 
+/*!
+* \fn float	theon(int n)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-11-11
+*
+* \brief : Approx sqrt2 2 methode theon 
+* \param n : nb d'iterations 
+*
+* \return : Retourne valeur de sqrt obtenue
+* \remark : ATTENTION UTILISER UNE ITERATION < 100 SINON CHANGER FLOAT EN DOUBLE LONG
+*/
 float	theon(int n)
 {
 	float pn;
@@ -30,10 +42,3 @@ float	theon(int n)
 	return (pn / qn);
 }
 
-/*
-int	main(int ac, char **av)
-{
-	// ATTENTION UTILISE UNE ITERATION < 100 SINON CHANGER FLOAT EN DOUBLE LONG
-	printf("Approx sqrt 2 = %f\n", theon(atoi(av[1])));
-	return 0;
-}*/

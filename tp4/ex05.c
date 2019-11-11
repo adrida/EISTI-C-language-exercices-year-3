@@ -2,13 +2,24 @@
  *  \author ridaadam
  *  \version 0.1
  *  \date 28-10-2019 
- *  \brief
+ *  \brief : ex5 tp4 calcul sqrt2 halley
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
+/*!
+* 'fn float	halley(int n)
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-11-11
+*
+* \brief : Approx racine 2 methode Halley
+* \param n : nb d'iterations
+*
+* \return : valeur de sqrt 2
+*/
 float	halley(int n)
 {
 	float un;
@@ -23,13 +34,3 @@ float	halley(int n)
 	}
 	return un;
 }
-
-/*
-int	main(int ac, char **av)
-{
-
-	printf("Approx sqrt 2 = %f\n", halley(atoi(av[1])));
-	return 0;
-
-}
-*/

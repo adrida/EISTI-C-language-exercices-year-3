@@ -9,6 +9,7 @@
 #include <stdlib.h>
 
 /*!
+* \fn float	pi_john(int n)
 * \author Adam Rida <ridaadam@eisti.eu>
 * \version 0.1
 * \date 2019-11-11

@@ -8,6 +8,13 @@
 
 #include "lib.h"
 
+/*!
+* \fn : void	menu(void)
+* \brief : Menu principal
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-11-11
+*/
 void	menu(void)
 {
 	int i;
