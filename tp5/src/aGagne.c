@@ -81,7 +81,7 @@ int check_columns(int ttint_plateau[N][N])
 		}
 		if (tem == N)
 		{
-			printf("Victoire2!\n");
+			printf("Victoire!\n");
 			return 1;
 		}
 		j++; 
@@ -131,7 +131,7 @@ int check_diag(int ttint_plateau[N][N])
 	}
 	if ((diag1 == N || diag2 == N))
 	{
-		printf("Victoire3!\n");
+		printf("Victoire!\n");
 		return 1;
 	}
 	return 0;

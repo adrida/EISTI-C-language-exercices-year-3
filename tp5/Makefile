@@ -1,6 +1,6 @@
 NAME=lib.a
 
-SRC= src/affichage.c src/aGagne.c src/init.c src/jouer.c src/main.c src/tourDeJeu.c
+SRC= src/affichage.c src/aGagne.c src/init.c src/inversion.c src/jouer.c src/main.c src/menu.c src/scalaire.c src/somme.c src/tourDeJeu.c src/vectoriel.c
 
 INC=lib.h
 OBJ=$(SRC:.c=.o)

@@ -21,9 +21,6 @@
 */
 int	main (int ac, char **av)
 {
-	int ttint_plateau[N][N];
-
-	init(ttint_plateau);
-	tourDeJeu(ttint_plateau);
+	menu();
 	return 0;
 }
