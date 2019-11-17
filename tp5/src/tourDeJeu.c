@@ -15,16 +15,16 @@ int     aGagne(int ttint_plateau[N][N]);
 
 
 /*!
-* \fn :int	grille_complete(int ttint_plateau[N][N])
-* \author Adam Rida <ridaadam@eisti.eu>
-* \version 0.1
-* \date 2019-11-17
-*
-* \brief  : Verifie si le plateau est entierement rempli 
-* \param ttint_plateau[N][N] : plateau de jeu
-*
-* \return : Retourne 1 si le plateau est complet 0 sinon
-*/
+ * \fn :int	grille_complete(int ttint_plateau[N][N])
+ * \author Adam Rida <ridaadam@eisti.eu>
+ * \version 0.1
+ * \date 2019-11-17
+ *
+ * \brief  : Verifie si le plateau est entierement rempli 
+ * \param ttint_plateau[N][N] : plateau de jeu
+ *
+ * \return : Retourne 1 si le plateau est complet 0 sinon
+ */
 int	grille_complete(int ttint_plateau[N][N])
 {
 	int i;
@@ -50,14 +50,14 @@ int	grille_complete(int ttint_plateau[N][N])
 
 
 /*!
-* \fn : void	tourDeJeu(int ttint_plateau[N][N])
-* \author Adam Rida <ridaadam@eisti.eu>
-* \version 0.1
-* \date 2019-11-17
-*
-* \brief : permet de faire jouer les joueurs chacun leur tour, jusqu’à la fin de la partie. 
-* \param ttint_plateau[N][N] : plateau de jeu
-*/
+ * \fn : void	tourDeJeu(int ttint_plateau[N][N])
+ * \author Adam Rida <ridaadam@eisti.eu>
+ * \version 0.1
+ * \date 2019-11-17
+ *
+ * \brief : permet de faire jouer les joueurs chacun leur tour, jusqu’à la fin de la partie. 
+ * \param ttint_plateau[N][N] : plateau de jeu
+ */
 void	tourDeJeu(int ttint_plateau[N][N])
 {
 	int i;
@@ -99,5 +99,9 @@ void	tourDeJeu(int ttint_plateau[N][N])
 		}
 		i++;
 	}
+	if (i % 2 == 0)
+		printf("\n Joueur 1 Vainqueur\n");
+	else
+		printf("\n Joueur 2 Vainqueur\n");
 	return;
 }
