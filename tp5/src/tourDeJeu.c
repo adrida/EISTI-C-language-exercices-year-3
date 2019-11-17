@@ -7,12 +7,6 @@
  */
 
 #include "../lib.h"
-void    init(int ttint_plateau[N][N]);
-char    disp_char(int index);
-void    affichage(int ttint_plateau[N][N]);
-int     jouer(int ttint_plateau[N][N], int int_joueur, int int_x, int int_y);
-int     aGagne(int ttint_plateau[N][N]);
-
 
 /*!
  * \fn :int	grille_complete(int ttint_plateau[N][N])
@@ -64,7 +58,6 @@ void	tourDeJeu(int ttint_plateau[N][N])
 	int line;
 	int col;
 	int ok;
-	printf("a joueeeeeee \n");
 
 	i = 1;
 	line = 1;
@@ -74,8 +67,6 @@ void	tourDeJeu(int ttint_plateau[N][N])
 	while(!aGagne(ttint_plateau) && !grille_complete(ttint_plateau))
 	{
 		printf("             Tour %d\n", i);
-		printf("Valeur de a Gagne : %d\n", aGagne(ttint_plateau));
-		printf("Valeur de Grille complete : %d\n", grille_complete(ttint_plateau));
 		if (i % 2 == 1)
 		{
 			printf("*** JOUEUR 1 ***\n");

@@ -6,10 +6,7 @@
 * \date 2019-11-15
 */
 
-//#include "../lib.h"
-#include "stdio.h"
-#include "stdlib.h"
-#define N 3
+#include "../lib.h"
 
 /*!
 * \fn : void	init(int ttint_plateau[N][N])

@@ -7,8 +7,7 @@
 */
 
 
-#include <stdio.h>
-#define N 3
+#include "../lib.h"
 
 /*!
 * \fn : char	disp_char(int index)
@@ -28,7 +27,7 @@ char	disp_char(int index)
 	if (index == 2)
 		return ('O');
 	else
-		return ('-');
+		return (' ');
 }
 
 /*!

@@ -1,6 +1,6 @@
 NAME=lib.a
 
-SRC= srcs/ex01.c srcs/ex02.c srcs/ex03.c srcs/ex04.c srcs/ex05.c srcs/ex06.c srcs/main.c  srcs/menu.c 
+SRC= src/affichage.c src/aGagne.c src/init.c src/jouer.c src/main.c src/tourDeJeu.c
 
 INC=lib.h
 OBJ=$(SRC:.c=.o)
@@ -8,7 +8,7 @@ OBJ=$(SRC:.c=.o)
 FLAGS=-Wall
 
 all : $(NAME)
-	@gcc srcs/main.c lib.a -lm ; echo "Compilation effectuee avec succes !"
+	@gcc $(SRC) lib.a -lm ; echo "Compilation effectuee avec succes !"
 
 $(NAME): $(OBJ)
 	@ar rcs $(NAME) $^; echo "Creation de la librairie ..."
