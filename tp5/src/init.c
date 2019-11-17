@@ -29,7 +29,6 @@ void	init(int ttint_plateau[N][N])
 	j = 0;
 	while (i != N)
 	{
-		printf("line my nigga\n");
 		j = 0;
 		while (j != N)
 		{
