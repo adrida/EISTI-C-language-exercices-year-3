@@ -33,7 +33,7 @@ int	jouer(int ttint_plateau[N][N], int int_joueur, int int_x, int int_y)
 	if (ttint_plateau[int_x][int_y] != -1)
 	{
 		printf("Case non libre...\n");
-		return (1);
+		return (0);
 	}
 	ttint_plateau[int_x][int_y] = int_joueur;
 	printf("Saisie validee...\n");
