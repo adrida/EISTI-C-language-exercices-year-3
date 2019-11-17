@@ -6,6 +6,10 @@
 * \date 2019-11-15
 */
 
+
+#include <stdio.h>
+#define N 3
+
 /*!
 * \fn : char	disp_char(int index)
 * \author Adam Rida <ridaadam@eisti.eu>
@@ -24,7 +28,7 @@ char	disp_char(int index)
 	if (index == 2)
 		return ('O');
 	else
-		return (' ');
+		return ('-');
 }
 
 /*!

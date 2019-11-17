@@ -8,6 +8,7 @@
 
 //#include "../lib.h"
 #include "stdio.h"
+#include "stdlib.h"
 #define N 3
 
 /*!
@@ -23,22 +24,19 @@ void	init(int ttint_plateau[N][N])
 {
 	int i;
 	int j;
-
+	
 	i = 0;
 	j = 0;
 	while (i != N)
 	{
+		printf("line my nigga\n");
 		j = 0;
 		while (j != N)
 		{
-			ttint_plateau[i][j] = -1;
-			j-=-1;
+			ttint_plateau[i][j] = (-1);
+			j++;
 		}
-		i-=-1;
-	}	
+		i++;
+	}
 }
 
-void	main(int ac, char **av)
-{
-	
-}

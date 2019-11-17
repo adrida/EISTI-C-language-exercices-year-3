@@ -34,15 +34,18 @@ int check_lines(int ttint_plateau[N][N])
 		tem = 1;
 		while (j != N)
 		{
-			if (ttint_plateau[i][j] != ttint_plateau[i][0])
+			if (ttint_plateau[i][j] != ttint_plateau[i][0] || ttint_plateau[i][j] == -1)
 				tem = 0;
 			j++;
 		}
 		if (tem == 0)
-			return 1;
+		{	
+			return 0;
+		}
 		i++; 
 	}
-	return 0;
+	printf("Victoire!\n");
+	return 1;
 }
 
 
@@ -72,15 +75,18 @@ int check_columns(int ttint_plateau[N][N])
 		tem = 1;
 		while (j != N)
 		{
-			if (ttint_plateau[i][j] != ttint_plateau[0][j])
+			if (ttint_plateau[i][j] != ttint_plateau[0][j] || ttint_plateau[i][j] == -1)
 				tem = 0;
 			j++;
 		}
 		if (tem == 0)
-			return 1;
+		{
+			return 0;
+		}
 		i++; 
 	}
-	return 0;
+	printf("Victoire2!\n");
+	return 1;
 }
 
 /*!
@@ -98,32 +104,37 @@ int check_diag(int ttint_plateau[N][N])
 {
 	int i;
 	int j;
-	int tem;
+	int diag1;
+	int diag2;
 
 	i = 0;
 	j = 0;
-	tem = 1;
+	diag1 = 1;
+	diag2 = 1;
 	while (i != N)
 	{
-		tem = 1;
-		if (ttint_plateau[i][j] != ttint_plateau[0][0])
-			tem = 0;
+		if (ttint_plateau[i][j] != ttint_plateau[0][0] || ttint_plateau[i][j] == -1 )
+		{
+			diag1 = 0;
+		}
 		i++; 
 		j++;
 	}
 	i = 0;
-	j = N;
+	j = N - 1;
 	while (i != N)
 	{
-		tem = 1;
-		if (ttint_plateau[i][j] != ttint_plateau[0][N])
-			tem = 0;
+		if (ttint_plateau[i][j] != ttint_plateau[0][N - 1] || ttint_plateau[i][j] == -1 )
+			diag2 = 0;
 		i++;
 		j--;
 	}
-	if (tem == 0)
-		return 1;
-	return 0;
+	if (diag1 == 0 && diag2 == 0)
+	{
+		return 0;
+	}
+	printf("Victoire3!\n");
+	return 1;
 }
 
 /*!
@@ -139,7 +150,7 @@ int check_diag(int ttint_plateau[N][N])
 */
 int	aGagne(int ttint_plateau[N][N])
 {
-	if (check_lines(ttint_plateau) || check_columns(ttint_plateau) || check_lines(ttint_plateau))
+	if (check_lines(ttint_plateau) || check_columns(ttint_plateau) || check_diag(ttint_plateau))
 		return 1;
 	return 0;
 }
