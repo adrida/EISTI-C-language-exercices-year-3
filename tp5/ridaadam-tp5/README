@@ -1,0 +1,16 @@
+TP 4
+
+Pour lancer le programme il faut :
+
+taper : make
+Attendre le message confirmant la compilation
+taper : ./a.out
+
+Voici les options possibles :
+
+make re : supprime tous les fichiers objets ainsi que la lib et recompile
+make clean : supprime les fichiers objets
+make fclean : supprime la lib
+make doc : Genere la documentation doxygen
+make redoc : Supprime et regenere la documentation
+make deldoc : supprime la documenation
