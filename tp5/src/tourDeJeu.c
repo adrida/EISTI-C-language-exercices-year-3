@@ -64,25 +64,25 @@ void	tourDeJeu(int ttint_plateau[N][N])
 	int line;
 	int col;
 	int ok;
-					printf("a joueeeeeee \n");
+	printf("a joueeeeeee \n");
 
 	i = 1;
 	line = 1;
 	col = 1;
 	ok = 0;
 
-	while(!aGagne(ttint_plateau) || !grille_complete(ttint_plateau))
+	while(!aGagne(ttint_plateau) && !grille_complete(ttint_plateau))
 	{
 		printf("             Tour %d\n", i);
 		printf("Valeur de a Gagne : %d\n", aGagne(ttint_plateau));
 		printf("Valeur de Grille complete : %d\n", grille_complete(ttint_plateau));
-		affichage(ttint_plateau);
 		if (i % 2 == 1)
 		{
 			printf("*** JOUEUR 1 ***\n");
 			ok = 0;
 			while (ok != 1)
 			{
+				affichage(ttint_plateau);
 				printf("Saisir la ligne ou vous voulez jouer :\n");
 				scanf("%d", &line);
 				printf("Saisir la colonne ou vous voulez jouer :\n");
@@ -97,6 +97,7 @@ void	tourDeJeu(int ttint_plateau[N][N])
 			ok = 0;
 			while (ok != 1)
 			{
+				affichage(ttint_plateau);
 				printf("Saisir la ligne ou vous voulez jouer :\n");
 				scanf("%d", &line);
 				printf("Saisir la colonne ou vous voulez jouer :\n");
@@ -108,8 +109,8 @@ void	tourDeJeu(int ttint_plateau[N][N])
 		i++;
 	}
 	if (i % 2 == 0)
-		printf("\n Joueur 1 Vainqueur\n");
+		printf("Joueur 1 Vainqueur\n");
 	else
-		printf("\n Joueur 2 Vainqueur\n");
+		printf("Joueur 2 Vainqueur\n");
 	return;
 }
