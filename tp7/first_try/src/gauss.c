@@ -1,4 +1,5 @@
 #include "../lib.h"
+void	disp_mat(float **mat, int size);
 
 float **dilatation(float **mat, int i, float k, int size)
 {
@@ -75,12 +76,41 @@ float **formeTriangulaire(float **mat, int size)
 	i = 0;
 	while (i != size)
 	{
+		printf("Etape numero %d : \n", i);
+		disp_mat(mat,size);
 		mat = zerosSousPivot(mat,i,size);
 		i++;
 	}
 	return mat;
 }
 
+float **formeTriangulaire2(float **mat, int size)
+{
+	int i;
+	int j;
+
+	i = 0;
+	j = 1;
+	while (i != size)
+	{
+		j = i;
+		printf("Etape numero %d : \n", i);
+		disp_mat(mat,size);
+		if(mat[i][i] == 0)
+		{
+			while(mat[i][i] == 0)
+				{
+					j++;
+					mat = permutation(mat,i,j,size);
+				}
+		}
+		else
+			mat = zerosSousPivot(mat,i,size);
+		i++;
+		j++;
+	}
+	return mat;
+}
 
 
 
