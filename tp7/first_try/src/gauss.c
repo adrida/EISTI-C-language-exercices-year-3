@@ -28,7 +28,7 @@ float **dilatation(float **mat, int i, float k, int size, int len)
 	int j;
 	
 	j = 0;
-	while (j != size)
+	while (j != len)
 	{
 		mat[i][j] = k * mat[i][j];
 		j++;
@@ -243,7 +243,7 @@ float **inverse(float **mat, int size, int len)
 	}
 	printf("before GAUSS\n");
 	disp_mat_plius(mat_etendue,size,2*size);
-	mat_etendue = formeTriangulaire2(mat_etendue,size,2*size);
+	mat_etendue = formeTriangulaire3(mat_etendue,size,2*size);
 	mat_etendue = identite(mat_etendue,size,2*size);	
 	printf("after GAUSS\n");
 	disp_mat_plius(mat_etendue,size,2*size);
