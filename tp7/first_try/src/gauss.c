@@ -67,3 +67,20 @@ float **zerosSousPivot(float **mat, int i, int size)
 	mat = dilatation(mat, i, tmp, size);
 	return mat;
 }
+
+float **formeTriangulaire(float **mat, int size)
+{
+	int i;
+
+	i = 0;
+	while (i != size)
+	{
+		mat = zerosSousPivot(mat,i,size);
+		i++;
+	}
+	return mat;
+}
+
+
+
+
