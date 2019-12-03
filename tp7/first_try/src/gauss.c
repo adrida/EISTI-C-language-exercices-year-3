@@ -1,7 +1,29 @@
 #include "../lib.h"
 void	disp_mat(float **mat, int size);
 
-float **dilatation(float **mat, int i, float k, int size)
+
+
+void	disp_mat_plius(float **mat, int lines, int col)
+{
+	int i = 0;
+	int j = 0;
+
+	while (i != lines)
+	{
+		j = 0;
+		while (j != col)
+		{
+			printf("%f ", mat[i][j]);
+			j++;
+		}
+		printf("\n");
+		i++;
+	}
+}
+
+
+
+float **dilatation(float **mat, int i, float k, int size, int len)
 {
 	int j;
 	
@@ -14,25 +36,25 @@ float **dilatation(float **mat, int i, float k, int size)
 	return mat;
 }
 
-float **permutation(float **mat,int i, int j, int size)
+float **permutation(float **mat,int i, int j, int size, int len)
 {
 	int k;
 
 	float tmp[size];
 	k = 0;
-	while(k != size)
+	while(k != len)
 	{
 		tmp[k] = mat[i][k];
 		k++;
 	}
 	k = 0;
-	while(k != size)
+	while(k != len)
 	{
 		mat[i][k] = mat[j][k];
 		k++;
 	}
 	k = 0;
-	while(k != size)
+	while(k != len)
 	{
 		mat[j][k] = tmp[k];
 		k++;
@@ -40,12 +62,12 @@ float **permutation(float **mat,int i, int j, int size)
 	return mat;
 }
 
-float **transvection(float **mat, int i, int j, float k, int size)
+float **transvection(float **mat, int i, int j, float k, int size, int len)
 {
 	int l;
 
 	l = 0;
-	while(l != size)
+	while(l != len)
 	{
 		mat[i][l] = mat[i][l] + k * mat[j][l];
 		l++;
@@ -53,7 +75,7 @@ float **transvection(float **mat, int i, int j, float k, int size)
 	return mat;
 }
 
-float **zerosSousPivot(float **mat, int i, int size)
+float **zerosSousPivot(float **mat, int i, int size, int len)
 {
 	int j;
 
@@ -62,14 +84,14 @@ float **zerosSousPivot(float **mat, int i, int size)
 	tmp = (1 / mat[i][i]);
 	while(j != size)
 	{
-		mat = transvection(mat, j, i, -(tmp * mat[j][i]), size);
+		mat = transvection(mat, j, i, -(tmp * mat[j][i]), size, len);
 		j++;
 	}
-	mat = dilatation(mat, i, tmp, size);
+	mat = dilatation(mat, i, tmp, size, len);
 	return mat;
 }
 
-float **formeTriangulaire(float **mat, int size)
+float **formeTriangulaire(float **mat, int size, int len)
 {
 	int i;
 
@@ -78,13 +100,13 @@ float **formeTriangulaire(float **mat, int size)
 	{
 		printf("Etape numero %d : \n", i);
 		disp_mat(mat,size);
-		mat = zerosSousPivot(mat,i,size);
+		mat = zerosSousPivot(mat,i,size,len);
 		i++;
 	}
 	return mat;
 }
 
-float **formeTriangulaire2(float **mat, int size)
+float **formeTriangulaire2(float **mat, int size, int len)
 {
 	int i;
 	int j;
@@ -95,24 +117,24 @@ float **formeTriangulaire2(float **mat, int size)
 	{
 		j = i;
 		printf("Etape numero %d : \n", i);
-		disp_mat(mat,size);
+		disp_mat_plius(mat,size,len);
 		if(mat[i][i] == 0)
 		{
 			while(mat[i][i] == 0)
 				{
 					j++;
-					mat = permutation(mat,i,j,size);
+					mat = permutation(mat,i,j,size,len);
 				}
 		}
 		else
-			mat = zerosSousPivot(mat,i,size);
+			mat = zerosSousPivot(mat,i,size,len);
 		i++;
 		j++;
 	}
 	return mat;
 }
 
-float **formeTriangulaire3(float **mat, int size)
+float **formeTriangulaire3(float **mat, int size, int len)
 {
 	int i;
 	int j;
@@ -127,32 +149,32 @@ float **formeTriangulaire3(float **mat, int size)
 			while(mat[i][i] == 0)
 				{
 					j++;
-					mat = permutation(mat,i,j,size);
+					mat = permutation(mat,i,j,size,len);
 				}
 		}
 		else
-			mat = zerosSousPivot(mat,i,size);
+			mat = zerosSousPivot(mat,i,size,len);
 		i++;
 		j++;
 	}
 	return mat;
 }
 
-float **zerosSurPivot(float **mat, int i, int size)
+float **zerosSurPivot(float **mat, int i, int size, int len)
 {
 	int j;
 
 	j = i-1;
 	while(j >= 0)
 	{
-		mat = transvection(mat, j, i, -(mat[j][i]), size);
+		mat = transvection(mat, j, i, -(mat[j][i]), size,len);
 		j--;
 	}
 	return mat;
 }
 
 
-float **identite(float **mat, int size)
+float **identite(float **mat, int size, int len)
 {
 	int i;
 	int j;
@@ -167,13 +189,79 @@ float **identite(float **mat, int size)
 			while(mat[i][i] == 0)
 				{
 					j++;
-					mat = permutation(mat,i,j,size);
+					mat = permutation(mat,i,j,size,len);
 				}
 		}
 		else
-			mat = zerosSurPivot(mat,i,size);
+			mat = zerosSurPivot(mat,i,size,len);
 		i++;
 		j++;
+	}
+	return mat;
+}
+
+
+
+float **inverse(float **mat, int size, int len)
+{
+	float **mat_etendue;
+	int i = 0;
+	int j = 0;
+
+	mat_etendue = (float **)malloc(sizeof(float *) * size);
+	while (i != size)
+	{
+		mat_etendue[i] = (float *)malloc(sizeof(float) * 2 * size);
+		i++;
+	}
+
+
+	i = 0;
+	while(i != size)
+	{
+		j = 0;
+		while (j != size)
+		{
+			mat_etendue[i][j] = mat[i][j];
+			j++;
+		}
+		i++;
+	}
+	i = 0;
+	while(i != size)
+	{
+		j = size;
+		while ( j != 2 * size)
+		{
+			if (i + size != j)
+				mat_etendue[i][j] = 0;
+			else
+				mat_etendue[i][j] = 1;
+			j++;
+		}
+		i++;
+	}
+	printf("before GAUSS\n");
+	disp_mat_plius(mat_etendue,size,2*size);
+	mat_etendue = formeTriangulaire2(mat_etendue,size,2*size);
+	mat_etendue = identite(mat_etendue,size,2*size);	
+	printf("after GAUSS\n");
+	disp_mat_plius(mat_etendue,size,2*size);
+
+	i = 0;
+	j = size;
+	int k;
+	while(i != size)
+	{
+		k = 0;
+		j = size;
+		while(j != 2 * size)
+		{
+			mat[i][k] = mat_etendue[i][j];
+			j++;
+			k++;
+		}
+		i++;
 	}
 	return mat;
 }
