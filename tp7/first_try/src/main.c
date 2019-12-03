@@ -7,6 +7,9 @@ float **transvection(float **mat, int i, int j, float k, int size);
 float **zerosSousPivot(float **mat, int i, int size);
 float **formeTriangulaire(float **mat, int size);
 float **formeTriangulaire2(float **mat, int size);
+float **formeTriangulaire3(float **mat, int size);
+float **zerosSurPivot(float **mat, int i, int size);
+float **identite(float **mat, int size);
 
 
 
@@ -83,6 +86,7 @@ void	disp_mat(float **mat, int size)
 	}
 }
 
+
 int main(int ac, char **av)
 {
 	int size;
@@ -91,8 +95,12 @@ int main(int ac, char **av)
 	printf("Size = %d\n",size);
 	mat = get_matrix(size);
 	disp_mat(mat,size);
-	mat = formeTriangulaire2(mat,size);
+	mat = formeTriangulaire3(mat,size);
 	printf("-------------\n");
-	disp_mat(mat,size);
+				disp_mat(mat,size);
+	printf("-------------\n");
+			mat = identite(mat,size);
+				disp_mat(mat,size);
+
 	return 0;
 }

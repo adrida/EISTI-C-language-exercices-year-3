@@ -112,5 +112,68 @@ float **formeTriangulaire2(float **mat, int size)
 	return mat;
 }
 
+float **formeTriangulaire3(float **mat, int size)
+{
+	int i;
+	int j;
+
+	i = 0;
+	j = 1;
+	while (i != size)
+	{
+		j = i;
+		if(mat[i][i] == 0)
+		{
+			while(mat[i][i] == 0)
+				{
+					j++;
+					mat = permutation(mat,i,j,size);
+				}
+		}
+		else
+			mat = zerosSousPivot(mat,i,size);
+		i++;
+		j++;
+	}
+	return mat;
+}
+
+float **zerosSurPivot(float **mat, int i, int size)
+{
+	int j;
+
+	j = i-1;
+	while(j >= 0)
+	{
+		mat = transvection(mat, j, i, -(mat[j][i]), size);
+		j--;
+	}
+	return mat;
+}
 
 
+float **identite(float **mat, int size)
+{
+	int i;
+	int j;
+
+	i = 0;
+	j = 1;
+	while (i != size)
+	{
+		j = i;
+		if(mat[i][i] == 0)
+		{
+			while(mat[i][i] == 0)
+				{
+					j++;
+					mat = permutation(mat,i,j,size);
+				}
+		}
+		else
+			mat = zerosSurPivot(mat,i,size);
+		i++;
+		j++;
+	}
+	return mat;
+}
