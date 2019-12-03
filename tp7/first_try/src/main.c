@@ -2,6 +2,11 @@
 
 #include "../lib.h"
 float **dilatation(float **mat, int i, float k, int size);
+float **permutation(float **mat,int i, int j, int size);
+float **transvection(float **mat, int i, int j, float k, int size);
+float **zerosSousPivot(float **mat, int i, int size);
+
+
 
 float **get_matrix(int size)
 {
@@ -68,7 +73,7 @@ void	disp_mat(float **mat, int size)
 		j = 0;
 		while (j != size)
 		{
-			printf("%d ", (int)mat[i][j]);
+			printf("%f ", mat[i][j]);
 			j++;
 		}
 		printf("\n");
@@ -84,7 +89,8 @@ int main(int ac, char **av)
 	printf("Size = %d\n",size);
 	mat = get_matrix(size);
 	disp_mat(mat,size);
-	mat = dilatation(mat,2,3,size);
+	mat = zerosSousPivot(mat,0,size);
+	printf("-------------\n");
 	disp_mat(mat,size);
 	return 0;
 }

@@ -39,3 +39,31 @@ float **permutation(float **mat,int i, int j, int size)
 	return mat;
 }
 
+float **transvection(float **mat, int i, int j, float k, int size)
+{
+	int l;
+
+	l = 0;
+	while(l != size)
+	{
+		mat[i][l] = mat[i][l] + k * mat[j][l];
+		l++;
+	}
+	return mat;
+}
+
+float **zerosSousPivot(float **mat, int i, int size)
+{
+	int j;
+
+	j = i+1;
+	float tmp;
+	tmp = (1 / mat[i][i]);
+	while(j != size)
+	{
+		mat = transvection(mat, j, i, -(tmp * mat[j][i]), size);
+		j++;
+	}
+	mat = dilatation(mat, i, tmp, size);
+	return mat;
+}
