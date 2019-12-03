@@ -1,7 +1,4 @@
 #include "../lib.h"
-void	disp_mat(float **mat, int size);
-
-
 
 void	disp_mat_plius(float **mat, int lines, int col)
 {
