@@ -6,20 +6,26 @@
 
 int **get_matrix(int size)
 {
-	int mat[size][size];
+	int **mat;
 	int i = 0;
 	int j = 0;
-
+	
+	if(!(mat = (int **)malloc(sizeof(int*) * size)))
+		return NULL;
+	while (i != size)
+	{
+		if(!(mat[i] = (int *)malloc(sizeof(int) * size)))
+			return NULL;
+		i++;
+	}	
+	i = 0;
 	while (i != size)
 	{
 		j = 0;
 		while (j != size)
 		{
-			printf(">>Remplissage ... \n
-				>>Ligne : %d\n
-				>>Colonne : %d\n
-				>> ? ", i,j);	
-			scanf(%d, &mat[i][j]);
+			printf(">>Remplissage ... \n>>Ligne : %d\n>>Colonne : %d\n>> ? ", i + 1,j + 1);	
+			scanf("%d", &mat[i][j]);
 			j++;
 		}
 		i++;
@@ -53,7 +59,7 @@ int	get_size(int ac, char **av)
 }
 
 
-void	disp_mat(int mat[size][size])
+void	disp_mat(int **mat, int size)
 {
 	int i = 0;
 	int j = 0;
@@ -63,7 +69,7 @@ void	disp_mat(int mat[size][size])
 		j = 0;
 		while (j != size)
 		{
-			printf("%d",mat[i][j]);
+			printf("%d ",mat[i][j]);
 			j++;
 		}
 		printf("\n");
@@ -77,11 +83,12 @@ int main(int ac, char **av)
 	FILE* fic = NULL;
 	char *mat_brute = NULL;
 	size = get_size(ac,av);
-	int mat[size][size];
+	int **mat;
 	
 	printf("Size = %d\n",size);
 	fgets(mat_brute, sizeof(int) * size * size, stdout);
 	if (mat_brute == NULL)
-		mat = get_matrix(int size);
+		mat = get_matrix(size);
+	disp_mat(mat,size);
 	return 0;
 }
