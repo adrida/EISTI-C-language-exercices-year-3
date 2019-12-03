@@ -1,3 +1,10 @@
+/*!
+* \file gauss.c
+* \brief : methode de gauss
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-12-03
+*/
 #include "../lib.h"
 
 void	disp_mat_plius(float **mat, int lines, int col)
@@ -238,12 +245,12 @@ float **inverse(float **mat, int size, int len)
 		}
 		i++;
 	}
-	printf("before GAUSS\n");
-	disp_mat_plius(mat_etendue,size,2*size);
+	//printf("before GAUSS\n");
+	//disp_mat_plius(mat_etendue,size,2*size);
 	mat_etendue = formeTriangulaire3(mat_etendue,size,2*size);
 	mat_etendue = identite(mat_etendue,size,2*size);	
-	printf("after GAUSS\n");
-	disp_mat_plius(mat_etendue,size,2*size);
+	//printf("after GAUSS\n");
+	//disp_mat_plius(mat_etendue,size,2*size);
 
 	i = 0;
 	j = size;

@@ -1,3 +1,10 @@
+/*!
+* \file lancement.c
+* \brief : fonctions utiles pour les deux methodes
+* \author Adam Rida <ridaadam@eisti.eu>
+* \version 0.1
+* \date 2019-12-03
+*/
 
 #include "../lib.h"
 
@@ -59,13 +66,13 @@ int	get_size(int ac, char **av)
 int	get_method(int ac, char **av)
 {
 	int i;
-	
+
 	i = 0;
 	while(ac != 1)
 	{
-		if (strcmp(av[i]) == "gauss")
+		if (strcmp(av[i],"gauss") == 1)
 			return 1;
-		if (strcmp(av[i]) == "determinant")
+		if (strcmp(av[i],"determinant") == 1)
 			return 2;
 		i++;
 		ac--;
