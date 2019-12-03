@@ -3,6 +3,30 @@
 //#include "../lib.h"
 #include <stdlib.h>
 #include <stdio.h>
+
+int **get_matrix(int size)
+{
+	int mat[size][size];
+	int i = 0;
+	int j = 0;
+
+	while (i != size)
+	{
+		j = 0;
+		while (j != size)
+		{
+			printf(">>Remplissage ... \n
+				>>Ligne : %d\n
+				>>Colonne : %d\n
+				>> ? ", i,j);	
+			scanf(%d, &mat[i][j]);
+			j++;
+		}
+		i++;
+	} 
+	return mat;
+}
+
 int	get_size(int ac, char **av)
 {
 	int i;
@@ -29,10 +53,35 @@ int	get_size(int ac, char **av)
 }
 
 
+void	disp_mat(int mat[size][size])
+{
+	int i = 0;
+	int j = 0;
+
+	while (i != size)
+	{
+		j = 0;
+		while (j != size)
+		{
+			printf("%d",mat[i][j]);
+			j++;
+		}
+		printf("\n");
+		i++;
+	}
+}
+
 int main(int ac, char **av)
 {
 	int size;
-
-	printf("Size = %d\n",size = get_size(ac,av));
+	FILE* fic = NULL;
+	char *mat_brute = NULL;
+	size = get_size(ac,av);
+	int mat[size][size];
+	
+	printf("Size = %d\n",size);
+	fgets(mat_brute, sizeof(int) * size * size, stdout);
+	if (mat_brute == NULL)
+		mat = get_matrix(int size);
 	return 0;
 }
