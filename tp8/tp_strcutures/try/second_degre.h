@@ -17,4 +17,8 @@ struct solutionEqu2D
 	struct nombreComplexe x2;
 };
 
+struct solutionEqu2D	resolution(float a, float b, float c);
+void	disp_res(struct solutionEqu2D sol);
+
+
 #endif

@@ -25,6 +25,13 @@ struct solutionEqu2D	resolution(float a, float b, float c)
 	return (sol);
 }
 
+void	disp_res(struct solutionEqu2D sol)
+{
+	printf (" X1  : \n\t Re = %f \n\t Im = %f \n", sol.x1.Re, sol.x1.Im);
+	printf (" X2  : \n\t Re = %f \n\t Im = %f \n", sol.x2.Re, sol.x2.Im);
+}
+
+
 int	main(int ac, char **av)
 {
 	struct solutionEqu2D sol;
@@ -36,7 +43,6 @@ int	main(int ac, char **av)
 	float b = atof(av[2]);
 	float c = atof(av[3]);
 	sol = resolution(a,b,c);
-	printf (" X1  : \n\t Re = %f \n\t Im = %f \n", sol.x1.Re, sol.x1.Im);
-	printf (" X2  : \n\t Re = %f \n\t Im = %f \n", sol.x2.Re, sol.x2.Im);
+	disp_res(sol);
 	return 0;
 }
