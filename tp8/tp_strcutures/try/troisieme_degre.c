@@ -1,5 +1,29 @@
 #include "troisieme_degre.h"
 
+float get_value(float a,float b,float c, float d, float x)
+{
+	return(a*x*x*x+b*x*x+c*x+d);
+}
+
+float	sol_approchee(float a,float b,float c, float d, float e)
+{
+	float mid;
+	float inf = (float)INT_MIN;
+	float sup = (float)INT_MAX;
+
+	mid = (inf + sup) / 2;
+
+	while (get_value(a,b,c,d,inf) - get_value(a,b,c,d,sup) >= 2*e)
+	{
+		mid = (inf + sup) / 2;
+		if(get_value(a,b,c,d,inf) * get_value(a,b,c,d,mid) >= 0)
+			inf = mid;
+		else
+			sup = mid;
+	}
+	return (get_value(a,b,c,d,mid));
+}
+
 struct solutionEqu3D	troisieme_degre(float a,float b,float c, float d)
 {
 	//float disc0 = (b*b) + (4 * c * c * c) / 27;

@@ -4,6 +4,7 @@
 #include <math.h> //sqrt
 #include <stdlib.h> //atoi atof
 #include <stdio.h> // printf
+#include <limits.h> // int min et int max
 
 struct nombreComplexe
 {
