@@ -35,10 +35,6 @@ void	disp_res(struct solutionEqu2D sol)
 int	main(int ac, char **av)
 {
 	struct solutionEqu2D sol;
-/*
-	float a = (float)atoi(av[1]);
-	float b = (float)atoi(av[2]);
-	float c = (float)atoi(av[3]); */
 	float a = atof(av[1]);
 	float b = atof(av[2]);
 	float c = atof(av[3]);
