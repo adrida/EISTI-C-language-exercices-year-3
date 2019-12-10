@@ -1,0 +1,17 @@
+TP 8
+
+Pour lancer le programme il faut :
+
+taper : make
+Attendre le message confirmant la compilation
+taper : ./a.out 1 2 3 4 
+Par exemple pour le polynome x**3+2x**2+3x+4
+
+Voici les options possibles :
+
+make re : supprime tous les fichiers objets ainsi que la lib et recompile
+make clean : supprime les fichiers objets
+make fclean : supprime la lib
+make doc : Genere la documentation doxygen
+make redoc : Supprime et regenere la documentation
+make deldoc : supprime la documenation
